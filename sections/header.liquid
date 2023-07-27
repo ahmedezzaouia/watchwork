@@ -197,7 +197,8 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              {% comment %} <span class="h2">{{ shop.name }}</span> {% endcomment %}
+              <img width="" height="" src="{{ 'logo.png' | asset_url }}" alt="watchwork logo" loading="lazy" />
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
